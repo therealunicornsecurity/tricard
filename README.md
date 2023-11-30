@@ -121,8 +121,7 @@ tricard **does not perform** AV bypasses. It <ins>will</ins> get flagged by AVs 
 Limitations
 ======
 
-- tricard only targets x64 Windows sandboxes, although it is very easy to adapt it to support x86
-- for remote dispatch, only virustotal through msf-virustotal is supported
+tricard only targets x64 Windows sandboxes, although it is very easy to adapt it to support x86
 
 Goals
 ======
