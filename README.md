@@ -113,6 +113,11 @@ Run the server using:
 python3 srv.py
 ```
 
+Evasion
+======
+
+tricard **does not perform** AV bypasses. It <ins>will</ins> get flagged by AVs and EDRs.
+
 Limitations
 ======
 
