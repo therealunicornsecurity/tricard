@@ -29,6 +29,8 @@ Installation
 
 ### Agent and dispatcher
 
+
+
 ```bash
 apt get install gcc-mingw-w64 zlib1g-dev
 ```
@@ -44,6 +46,13 @@ All the sources are in *tmpsrc*. The *tmpbuild* folder will then contain:
 - tricard.sample1.exe
 - tricard.sample2.exe
 - tricard.sample3.exe
+
+*Note*
+
+The dispatcher is meant to run on Linux, but it can be executed on Windows hosts using Python 3. However, it is necessary to:
+
+* Install Mingw or Cygwin (for sed)
+* Change dispatcher.py to use a Windows based compiler
 
 ### Server setup
 
