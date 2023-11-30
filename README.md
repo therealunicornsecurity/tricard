@@ -35,6 +35,29 @@ Installation
 apt get install gcc-mingw-w64 zlib1g-dev
 ```
 
+Edit dispatcher.py, and add your own HMAC signing key:
+
+```python
+def send_statham(server,json):
+    SECRET_KEY = b'YOUR KEY'
+    message = json
+    hmac_signature = hmac.new(SECRET_KEY, str(message).encode('utf-8'), hashlib.sha256)
+    hmac_hex = hmac_signature.hexdigest()
+    jsondatam = {
+        'message': message,
+        'hmac': hmac_hex
+    }
+```
+
+Edit srv.py and add the same signing key:
+
+```python
+app = Flask(__name__)
+
+# Replace this with your actual secret key
+SECRET_KEY = b"YOUR KEY"
+```
+
 Run the dispatcher to compile as many versions of tricard as you wish:
 
 ```bash
