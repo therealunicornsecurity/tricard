@@ -11,6 +11,8 @@ __IoD__: Indicator of detection
 
 tricard is an IoD collection and analysis toolset
 
+More info at https://therealunicornsecurity.github.io/Tricard/
+
 ### How it works
 
 <img src="https://github.com/therealunicornsecurity/tricard/blob/main/img/tricard_graph.jpg?raw=true" width="600" height="600">
