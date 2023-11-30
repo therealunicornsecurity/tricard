@@ -37,7 +37,7 @@ def shufb64():
 def build(server,target):
     malone = str(uuid.uuid4())
     system("sed s/xXxUUIDxXx/"+malone +
-           "/g recon_dist.cpp > tmpsrc/tricard."+target+".cpp")
+           "/g recon.cpp > tmpsrc/tricard."+target+".cpp")
     pat = shufb64()
     system("sed -i s/xXTricardServerXx/"+server+"/g tmpsrc/tricard."+target+".cpp")
     system("sed -i s/xXBase64CharSetXx/"+pat+"/g tmpsrc/tricard."+target+".cpp")
