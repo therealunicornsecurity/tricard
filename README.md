@@ -128,4 +128,4 @@ tricard only targets x64 Windows sandboxes, although it is very easy to adapt it
 Goals
 ======
 
-tricard was initially developped in order to help us during red team engagements, but it could also be used by sandboxes editors, in order to improve their setups, and make detection less predicatble. Considering the scope of the tool, it is necessary to add that **we do not condone, under no circumstances, the use of tricard, and open source security tools in general, outside of the scope of legitimate engagements**. These tools are aimed to help security professionals in their jobs. 
+tricard was initially developped in order to help us during red team engagements, but it could also be used by sandboxes editors, in order to improve their setups, and make detection less predictable. Considering the scope of the tool, it is necessary to add that **we do not condone, under no circumstances, the use of tricard, and open source security tools in general, outside of the scope of legitimate engagements**. These tools are aimed to help security professionals in their jobs. 
