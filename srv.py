@@ -41,7 +41,8 @@ def receive_post_data():
     if matching_keys:
         target = matching_keys[0]
         jdump["Target"] = target
-    recode64(jdump,db[target][1])
+    if target != "__unknowntarget__":
+        recode64(jdump,db[target][1])
     with open(
             "data/"
             + str(request.remote_addr)
